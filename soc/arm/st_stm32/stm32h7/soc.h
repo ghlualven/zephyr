@@ -11,6 +11,12 @@
 
 #include <stm32h7xx.h>
 
+#ifdef CONFIG_STEPPER_STM32
+ #include <stm32h7xx_ll_rcc.h>
+ #include <stm32h7xx_ll_tim.h>
+ #endif /* CONFIG_STEPPER_STM32 */
+
+
 /* Add generated devicetree information and STM32 helper macros */
 #include <st_stm32_dt.h>
 

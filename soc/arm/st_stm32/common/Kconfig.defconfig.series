@@ -52,4 +52,11 @@ config MEMC_STM32
 	default y
 	depends on MEMC
 
+if STEPPER
+
+ config STEPPER_STM32
+ 	default y
+
+ endif # STEPPER
+
 endif # SOC_FAMILY_STM32
